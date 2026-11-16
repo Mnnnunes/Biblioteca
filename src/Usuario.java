@@ -1,26 +1,33 @@
+import java.util.ArrayList;
+import java.util.List;
+
 public class Usuario {
 
     private String nome;
-    private String livrosEmprestados;
+    // cria um arraylist de livros emprestados para cada usuario...
+    private List<Livro> livrosEmprestados;
     private int limiteEmprestimos;
     private int prazoDevolucao;
-    
-    public Usuario(String nome, String livrosEmprestados, int limiteEmprestimos, int prazoDevolucao) {
+
+    public Usuario(String nome, int limiteEmprestimos, int prazoDevolucao) {
         this.nome = nome;
-        this.livrosEmprestados = livrosEmprestados;
+        this.livrosEmprestados = new ArrayList<>();
         this.limiteEmprestimos = limiteEmprestimos;
         this.prazoDevolucao = prazoDevolucao;
     }
-    
+
     public String getNome() {
         return nome;
     }
-    public String getLivrosEmprestados() {
+
+    public List<Livro> getLivrosEmprestados() {
         return livrosEmprestados;
     }
-    public int getlimiteEmprestimos() {
+
+    public int getLimiteEmprestimos() {
         return limiteEmprestimos;
     }
+
     public int getPrazoDevolucao() {
         return prazoDevolucao;
     }
@@ -28,14 +35,12 @@ public class Usuario {
     public void setNome(String nome) {
         this.nome = nome;
     }
-    public void setLivrosEmprestados(String livrosEmprestados) {
-        this.livrosEmprestados = livrosEmprestados;
-    }
-    public void setlimiteEmprestimos(int limiteEmprestimos) {
+
+    public void setLimiteEmprestimos(int limiteEmprestimos) {
         this.limiteEmprestimos = limiteEmprestimos;
     }
+
     public void setPrazoDevolucao(int prazoDevolucao) {
         this.prazoDevolucao = prazoDevolucao;
     }
-
 }
