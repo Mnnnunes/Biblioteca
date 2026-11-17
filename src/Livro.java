@@ -32,10 +32,12 @@ public class Livro {
     public String getGenero(){
         return genero;
     }
+ 
 
-    public boolean isDisponivel(){
-        return disponivel;
-    }
+      public boolean isDisponivel() {
+    return disponivel;
+}
+    
 
 //SETTERS altera o valor do atributo
 

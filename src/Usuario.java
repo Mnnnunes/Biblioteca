@@ -9,12 +9,12 @@ public class Usuario {
     private int limiteEmprestimos;
     private int prazoDevolucao;
 
-    public Usuario(String nome, int limiteEmprestimos, int prazoDevolucao) {
-        this.nome = nome;
-        this.livrosEmprestados = new ArrayList<>();
-        this.limiteEmprestimos = limiteEmprestimos;
-        this.prazoDevolucao = prazoDevolucao;
-    }
+  public Usuario(String nome) {
+    this.nome = nome;
+    this.livrosEmprestados = new ArrayList<>();
+    this.limiteEmprestimos = 3;
+    this.prazoDevolucao = 15;
+}
 
     public String getNome() {
         return nome;
